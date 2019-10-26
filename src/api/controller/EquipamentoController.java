@@ -210,7 +210,7 @@ public class EquipamentoController {
 				 String destinationFile = PATH + "machinelearning/tf_files/test/" + imageName;				 
 				 result = saveImage(imageUrl, destinationFile);
 				 
-				 String destinationFileReplica = PATH + "emcontrol/webapp/public/images/" + imageName;
+				 String destinationFileReplica = PATH + "emcontrol-app/public/images/" + imageName;
 				 saveImage(imageUrl, destinationFileReplica);
 				 
 				 if(result) {

@@ -22,11 +22,16 @@
 		</property>
 	</bean>
 	<bean id="mysqlDataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<!-- <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="url" value="jdbc:mysql://localhost/db_emcontrol"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value=""></property>
-
+		<property name="password" value=""></property> -->
+		
+		<property name="url" value="jdbc:mysql://google/db_emcontrol?cloudSqlInstance=emcontrol-tcc:us-central1:emcontrol-database"></property>
+		<property name="useSSL" value="false"></property>
+		<property name="socketFactory" value="com.google.cloud.sql.mysql.SocketFactory"></property>
+		<property name="username" value="emcontrol"></property>
+		<property name="password" value=",uHtE6@F+N=voZX"></property>
 	</bean>
 	
 	<!-- Upload Files -->
